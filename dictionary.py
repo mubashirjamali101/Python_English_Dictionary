@@ -48,23 +48,23 @@ def getmeaning(askWord):
                 break
             myIterator += 1
         return "404"
-    elif askWord:
+    elif len(get_close_matches(askWord , Data.keys())) > 0:
         
-        k = get_close_matches(askWord, Data)
-        if k :
-            return ["matches", k]
+        if get_close_matches(askWord, Data.keys())[0]:
+            k = get_close_matches(askWord, Data.keys())[0]
+            print(k)
+            return ["matches",k]
         else:
             return "404"
     else:
         return "404" 
 
 # if word is not found but matches for that word are found
-def clearMatches(matches):
-    print("We have found some matches for your word:")
-    i = 0
-    for match in matches:
-        i += 1
-        print(f"[{i}] {match}")
+def clearMatches(match):
+    nl = input(f"Did you mean {match} [y/n]").lower()
+    if nl == "y" or nl == "yes" or nl == "yeah" or nl == "yeap":
+        meaning = getmeaning(match)
+        printAnswer(meaning)
 
 # ask the word to find
 def askWord():
