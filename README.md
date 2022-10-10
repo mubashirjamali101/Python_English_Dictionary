@@ -1,8 +1,8 @@
 # Python Console Dictionary 📚📖
 
-Hello Everyone 👋
+[![CodeFactor](https://www.codefactor.io/repository/github/mubashirjamali101/python_english_dictionary/badge)](https://www.codefactor.io/repository/github/mubashirjamali101/python_english_dictionary)
 
-  I am Mubashir a Python programmer. I made this little Python Console dictionary app during my Complete Python Bootcamp 2021. So clone it & check it out, Suggestions & 
-Opinions are most welcomed 😃.
+Python Console dictionary app. Clone it & check it out.
+Suggestions & Opinions are most welcomed 😃.
 
--Mubashir ❤ @mubashirjamali101
+ -- Mubashir
